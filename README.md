@@ -11,4 +11,4 @@ The analysis was conducted primarily using the Pandas, matplotlib, pyplot, and r
 ### Data Sources
 The data used to complete this analysis came from the California Department of Education and the US Census Bureau's API service. 
 
-Interested in downloading our data file? Navigate to seidyp.github.io/school-data.html# to download our file!
+Interested in downloading our data file? Navigate to our [Data](seidyp.github.io/school-data.html#) to download our file!
