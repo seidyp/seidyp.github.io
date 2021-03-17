@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>CA School Enrollment</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-  <link rel="stylesheet" href="style-sp.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -25,10 +25,10 @@
               Visualizations
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Enrollment at Largest Districts</a></li>
-              <li><a class="dropdown-item" href="#">LAUSD Enrollment</a></li>
-              <li><a class="dropdown-item" href="#">LAUSD Unemployment</a></li>
-              <li><a class="dropdown-item" href="#">Unemployment vs. Enrollment</a></li>
+              <li><a class="dropdown-item" href="large-enroll.html">Enrollment at Largest Districts</a></li>
+              <li><a class="dropdown-item" href="lausd-enroll.html">LAUSD Enrollment</a></li>
+              <li><a class="dropdown-item" href="lausd-employ.html">LAUSD Unemployment</a></li>
+              <li><a class="dropdown-item" href="correlation.html">Unemployment vs. Enrollment</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -56,45 +56,61 @@
       <p>Click through this page to get an in-depth look at our analysis and findings.</p>
     </div>
   </div>
-  
-  <div class="row row-cols-1 row-cols-md-2 g-4">
-    <div class="col">
-      <div class="card">
-        <img src="images/large-1.png" class="card-img-top" alt="largest enrollment by CA school district">
-        <div class="card-body">
-          <h5 class="card-title">Enrollment Trend in 5 Largest Districts</h5>
-          <p class="card-text">Summarizes the public school enrollment trend at the 5 largest districts in California.</p>
+
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <a href="large-enroll.html">
+          <img src="images/large-1.png" class="d-block w-100" alt="...">
+        </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Enrollment Changes</h5>
+          <p>Percent change in enrollment at largest school districts</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <a href="lausd-enroll.html">
+          <img src="images/lausd-2.png" class="d-block w-100" alt="...">
+        </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>LAUSD Enrollment</h5>
+          <p>Enrollment trend at LAUSD</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="lausd-employ.html">
+          <img src="images/lausd-1.png" class="d-block w-100" alt="...">
+        </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>LAUSD Unemployment</h5>
+          <p>Unemployment trends within LAUSD area</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="correlation.html">
+          <img src="images/large-2.png" class="d-block w-100" alt="...">
+        </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Enrollment vs. Unemployment</h5>
+          <p>Regression analysis between enrollment and unemployment</p>
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card">
-        <img src="images/lausd-1.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">LAUSD Enrollment</h5>
-          <p class="card-text">An overview of public school enrollment in the Los Angeles Unified District since 2015.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="images/lausd-2.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">LAUSD Unemployment</h5>
-          <p class="card-text">A view of unemployment rates within the designated LAUSD area since 2015.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="images/large-2.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Enrollment vs. Unemployment</h5>
-          <p class="card-text">A regression analysis between public school enrollment and unemployment in California to determine correlation.</p>
-        </div>
-      </div>
-    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
+  
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
