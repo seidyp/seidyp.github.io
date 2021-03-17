@@ -1,1 +1,0 @@
-# seidyp.github.io
